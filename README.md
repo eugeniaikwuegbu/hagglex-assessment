@@ -31,7 +31,7 @@ localhost:3000/graphql
 ```
 Link to Hosted project on Heroku
 ```bash
-
+https://haggle-x-project.herokuapp.com
 ```
 Testing on Postman
 
