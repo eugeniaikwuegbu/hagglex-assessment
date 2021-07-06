@@ -27,7 +27,7 @@ yarn start:dev
 ```
 To view on GraphQL Playground, open the browser and paste this URL
 ```bash
-localhost:3000/graphql
+localhost:5000/graphql
 ```
 Link to Hosted project on Heroku
 ```bash
