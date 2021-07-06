@@ -15,10 +15,10 @@ export class ProductsResolver {
 
   @Query(() => [ProductType])
   async products() {
-    try{
+    try {
       return this.productService.findAll();
-    }catch (e){
-      throw new InternalServerErrorException()
+    } catch(e) {
+      throw new InternalServerErrorException();
     }
   }
 
