@@ -5,6 +5,7 @@ import { ProductsModule } from './products/products.module';
 import { ProductsService } from './products/products.service';
 import { ProductsController } from './products/products.controller';
 import { APP_INTERCEPTOR } from '@nestjs/core';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -13,7 +14,7 @@ import { APP_INTERCEPTOR } from '@nestjs/core';
     MongooseModule.forRoot('mongodb+srv://nest-project-api:hello1234@cluster0.jtim5.mongodb.net/nestjs-demo?retryWrites=true&w=majority'),
     // CacheModule.register({ ttl: 5, max: 10}),
   ],
-  controllers: [ProductsController],
+  controllers: [ProductsController, AppController],
   providers: [ProductsService,
     // {
     //   provide: APP_INTERCEPTOR,
