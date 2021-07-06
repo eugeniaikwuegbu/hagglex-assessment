@@ -35,16 +35,19 @@ https://haggle-x-project.herokuapp.com
 ```
 Testing on Postman
 
+POST Request
 Create new products
 ```bash
 {{base_url}}/products
 ```
 
+GET Request
 Get all products
 ```bash
 {{base_url}}/products
 ```
 
+POST Request
 Get Products by query params
 ```bash
 {{base_url}}/products/find?title={title}&desc={desc}&imageSize={imageSize}
