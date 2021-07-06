@@ -1,5 +1,5 @@
 {
-  "name": "haggle-x-app",
+  "name": "nest-mongo-graphql",
   "version": "0.0.1",
   "description": "",
   "author": "",
@@ -11,19 +11,13 @@
     "start:dev": "nodemon",
     "start:debug": "nodemon --config nodemon-debug.json",
     "prestart:prod": "rimraf dist && npm run build",
-    "start:prod": "node dist/src/main.js",
-    "postinstall": "npm run prestart:prod",
+    "start:prod": "node dist/main.js",
     "lint": "tslint -p tsconfig.json -c tslint.json",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json"
-  },
-  "engines": {
-    "node": "14.17.2",
-    "npm": "6.14.3",
-    "yarn": "1.22.10"
   },
   "dependencies": {
     "@nestjs/common": "^6.0.0",
@@ -32,7 +26,6 @@
     "@nestjs/mongoose": "^6.0.0",
     "@nestjs/platform-express": "^6.0.0",
     "apollo-server-express": "^2.4.8",
-    "cache-manager": "^3.4.4",
     "graphql": "^14.2.1",
     "graphql-tools": "^4.0.4",
     "mongoose": "^5.5.1",
